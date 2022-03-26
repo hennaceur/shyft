@@ -36,9 +36,9 @@ import TowIcon from "./images/icons/tower.png";
 import DupPic from "./images/icons/Three.png";
 import CasPic from "./images/icons/cas.png";
 import BrickPic from "./images/icons/brickHome.png";
-import TowPic from "./images/icons/apartPic.jpg"
+import TowPic from "./images/icons/apartPic.jpg";
 
-Geocode.setApiKey("AIzaSyDtlcbH_klvsg3ffoVE_6H2tylL4UxtatI");
+Geocode.setApiKey("");
 Geocode.setLanguage("en");
 
 const styles = {
@@ -188,7 +188,7 @@ class Maps extends Component {
     } else if (e.target.value === "Apartment") {
       tempIcon = TowIcon;
       tempPic = TowPic;
-    } 
+    }
     this.setState({
       listingType: e.target.value,
       listingIcon: tempIcon,
@@ -242,7 +242,7 @@ class Maps extends Component {
 
     return (
       <div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASOJR4PjYndTTtp6kUiqbwp8drHGPbkJA&libraries=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
         <div className="mainHuncho">
           <div className="mapBox1">
             {this.state.activeAds.map((ad) => (
@@ -651,5 +651,5 @@ class Maps extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyDtlcbH_klvsg3ffoVE_6H2tylL4UxtatI",
+  apiKey: "",
 })(Maps);
