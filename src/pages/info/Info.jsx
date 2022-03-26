@@ -1,9 +1,16 @@
 import React from "react";
+import Header from "./../menu/Header";
+import About from "./About";
+import ReadMePage from "./ReadMeContent";
 
 function Info() {
   return (
     <div>
-      <h1>Info page</h1>
+      <Header />
+
+      <About />
+      <br />
+      <ReadMePage />
     </div>
   );
 }

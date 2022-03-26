@@ -5,15 +5,17 @@ import InfoIcon from "@material-ui/icons/Info";
 import { IconButton } from "@material-ui/core";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { Link } from "react-router-dom";
+import Navbar from "./../../Navbar";
 
 function Header() {
   return (
     <div className="header">
-      <Link style={{ textDecoration: "none", color: "black" }} to={"/info"}>
+      <Navbar />
+      {/* <Link style={{ textDecoration: "none", color: "black" }} to={"/info"}>
         <IconButton style={{ color: "#E1373D" }}>
           <InfoIcon style={{ fontSize: 40 }} className="header_icon" />
         </IconButton>
-      </Link>
+      </Link> */}
 
       <img className="header_logo" src={Logo} alt="" />
 

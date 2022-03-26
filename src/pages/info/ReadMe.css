@@ -1,0 +1,15 @@
+.text-padding{
+    padding-left: 40px;
+}
+
+.background{
+    height: 70%;
+    /* The background image will change whenever
+    we load the page */  
+    background: #f0f0f0;
+      
+    /* This will make the background that have
+    been added will be darken */  
+    background-blend-mode:darken;
+    background-size:cover;
+}

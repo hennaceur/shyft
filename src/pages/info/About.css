@@ -1,0 +1,53 @@
+*{
+    margin:0; 
+    padding: 0;
+}
+      
+.background{
+    height: 70%;
+    /* The background image will change whenever
+    we load the page */  
+    background: #f0f0f0;
+      
+    /* This will make the background that have
+    been added will be darken */  
+    background-blend-mode:darken;
+    background-size:cover;
+}
+      
+      
+/* This is used to make the text to 
+appear bigger */  
+/* Now we have used a font here to distinguish 
+itself from the next text */  
+.text-big{
+    font-family: 'Courier New', serif;
+      
+    /* The text to have a style of bold */
+     font-weight: bold;
+      
+    /* The size of the text to be appearing as
+    bigger to distinguish itself from the text 
+    in the class text-small */  
+    font-size: 41px;
+      
+    /* The text to be aligned at center */  
+    text-align:center;
+}
+      
+.text-small{    
+    font-family: 'Courier New', cursive;
+    font-size: 18px;
+    text-align:center;
+}
+      
+/* This is used here in case if we want to 
+make the text appear at center */  
+.center{
+    text-align: center;
+}
+
+.team{
+    text-align: center;
+    padding: 5 5 5 5px;
+}

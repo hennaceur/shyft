@@ -13,5 +13,6 @@
 }
 
 .header_icon {
+    align-self: center;
     padding: 10px;
 }
