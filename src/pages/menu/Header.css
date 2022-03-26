@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     z-index: 100;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
+    border-bottom: 1px solid #8C52FF;
+    background-color: #8C52FF;
 }
 
 .header_logo {

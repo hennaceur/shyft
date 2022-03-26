@@ -30,7 +30,7 @@ function SignInScreen() {
       <div>
         <img src={Logo} />
         <br></br>
-        <h1 style={{ color: "#E1373D" }}>Please sign-in with Google:</h1>
+        <h1 style={{ color: "#8C52FF" }}>Please sign-in with Google:</h1>
         <br></br>
         <StyledFirebaseAuth
           uiConfig={uiConfig}

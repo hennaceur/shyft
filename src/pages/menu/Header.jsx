@@ -12,7 +12,7 @@ function Header() {
     <div className="header">
       <Navbar />
       {/* <Link style={{ textDecoration: "none", color: "black" }} to={"/info"}>
-        <IconButton style={{ color: "#E1373D" }}>
+        <IconButton style={{ color: "#8C52FF" }}>
           <InfoIcon style={{ fontSize: 40 }} className="header_icon" />
         </IconButton>
       </Link> */}
@@ -20,7 +20,7 @@ function Header() {
       <img className="header_logo" src={Logo} alt="" />
 
       <Link style={{ textDecoration: "none", color: "black" }} to={"/profile"}>
-        <IconButton style={{ color: "#E1373D" }}>
+        <IconButton style={{ color: "white" }}>
           <AccountCircleIcon style={{ fontSize: 40 }} className="header_icon" />
         </IconButton>
       </Link>

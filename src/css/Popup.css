@@ -10,11 +10,11 @@
 
 .modal>.header {
     width: 500px;
-    border-bottom: 1px solid #E1373D;
+    border-bottom: 1px solid #8C52FF;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
-    color: #E1373D;
+    color: #8C52FF;
     padding: 5px;
     border-radius: 10px;
 }
@@ -42,7 +42,7 @@
     right: -10px;
     top: -10px;
     font-size: 24px;
-    background: #E1373D;
+    background: #8C52FF;
     border-radius: 18px;
     border: 1px solid #cfcece;
 }

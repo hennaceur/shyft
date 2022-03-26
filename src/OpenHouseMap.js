@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./css/Maps.css";
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
-import Sale from "./images/icons/sale.png";
-import Garage from "./images/icons/garage.png";
 import Geocode from "react-geocode";
 import Popup from "reactjs-popup";
 import "./css/SearchInput.css";
@@ -10,11 +8,7 @@ import "./css/Popup.css";
 import "./pages/menu/Card.css";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
-import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from "@material-ui/pickers";
+import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
@@ -25,9 +19,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import DeckIcon from "@material-ui/icons/Deck";
 import AddIcon from "@material-ui/icons/Add";
-import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import Banner from "react-js-banner";
 import BrickIcon from "./images/icons/brick.png";
 import CasIcon from "./images/icons/castle.png";
@@ -287,7 +279,7 @@ class Maps extends Component {
                         <div className="adInfo-box">
                           <div
                             style={{
-                              background: "#E1373D",
+                              background: "#8C52FF",
                               color: "white",
                               borderRadius: "10px",
                             }}
@@ -457,7 +449,7 @@ class Maps extends Component {
                             : "suggestion-item";
                           const style = suggestion.active
                             ? { backgroundColor: "#FFBE58", cursor: "pointer" }
-                            : { backgroundColor: "#E1373D", cursor: "pointer" };
+                            : { backgroundColor: "#8C52FF", cursor: "pointer" };
                           return (
                             <div
                               {...getSuggestionItemProps(suggestion, {
