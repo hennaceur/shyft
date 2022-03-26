@@ -1,0 +1,17 @@
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #ffffff 20%, #aaaaaa 80%);
+}
+
+.menu_cards
+{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

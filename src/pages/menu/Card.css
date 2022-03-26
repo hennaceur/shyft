@@ -1,0 +1,41 @@
+.card
+{
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 100ms ease-in;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card>img {
+    object-fit: fill;
+    max-width: 500px;
+    max-height: 400px;
+    width: 100%;
+}
+
+.card_body {
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1;
+    background-color: white;
+}
+
+.card_body>h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card_body>h4 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

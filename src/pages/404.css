@@ -1,0 +1,9 @@
+.NotFound {
+    text-align: center;
+    font-size: large;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    transform: translate(0, -30%, -30%);
+    color: #1A365B;
+}
