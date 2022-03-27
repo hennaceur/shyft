@@ -10,6 +10,12 @@ export const SidebarData = [
     icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
+    {
+        title: "Dashboard",
+        path: "/dashboard",
+        icon: <IoIcons.IoMdMap />,
+        cName: "nav-text",
+    },
   {
     title: "Map",
     path: "/user78141",

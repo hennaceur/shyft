@@ -4,7 +4,7 @@ import Header from "../menu/Header";
 import "./../../css/SearchInput.css";
 import "./../garage-sale/Map.css";
 
-function User() {
+function Dashboard() {
   return (
     <div className="mainContainer">
       <div className="headerBox">
@@ -17,4 +17,4 @@ function User() {
   );
 }
 
-export default User;
+export default Dashboard;

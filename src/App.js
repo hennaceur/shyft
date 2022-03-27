@@ -9,7 +9,7 @@ import Profile from "./pages/profile/profile";
 import Contact from "./pages/contact/Contact";
 import SignIn from "./SignInScreen";
 import User from "./pages/user/User";
-
+import Dashboard from "./pages/dashboard/Dashboard";
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/info" component={Info} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/support" component={Contact} />
+            <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/user78141" component={User} />
           <Route component={NotFound} />
         </Switch>

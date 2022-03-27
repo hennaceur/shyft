@@ -54,7 +54,6 @@ class Maps extends Component {
         adTitle: "6 hour Dishwashing shift",
         adLat: 47.5072,
         adLng: -52.82007,
-        adDate: "",
         adType: "Dishwasher",
         adDesc:
           "Dishwasher needed for a 6 hour shift this sunday. You will be working with one other dishwasher to wash all kinds of plates and utensils",
