@@ -26,11 +26,11 @@ import CasIcon from "./images/icons/cashier.png";
 import ServerIcon from "./images/icons/waiter.png";
 import CookIcon from "./images/icons/cooking.png";
 import DupPic from "./images/icons/biggs.png";
-import CasPic from "./images/icons/biggs.png";
-import BrickPic from "./images/icons/biggs.png";
-import TowPic from "./images/icons/biggs.png";
+import CasPic from  "./images/icons/outfitter.png";
+import BrickPic from "./images/icons/curry.png";
+import TowPic from "./images/icons/outfitter.png";
 
-Geocode.setApiKey("myboon");
+Geocode.setApiKey("AIzaSyAwysuoZfkC7p6McCpC4nN3SO7s-4pxdDY");
 Geocode.setLanguage("en");
 
 const styles = {
@@ -52,23 +52,34 @@ class Maps extends Component {
     activeAds: [
       {
         adTitle: "Waiter Needed",
-        adLat: 47.56309,
-        adLng: -52.73061,
-        adDate: "",
+        adLat: 47.5471424,
+        adLng: -52.7415437,
         adType: "Server",
-        adDesc: "asdf",
+        adDesc: "shift",
         adIcon: ServerIcon,
-        adPic: BrickPic,
+        adPic: DupPic,
         adPostal: "H8N 2B5",
         adPlayers: 5,
         adPay: 70,
         adDate: "2021-03-29",
       },
+    {
+        adTitle: "Cashier Shift",
+        adLat: 47.5222,
+        adLng: -52.822,
+        adType: "Cashier",
+        adDesc: "Experienced cashier needed for 6 hours on sunday",
+        adIcon: CasIcon,
+        adPic: CasPic,
+        adPostal: "H8N 2B5",
+        adPlayers: 6,
+        adPay: 60,
+        adDate: "2022-04-03",
+    },
       {
         adTitle: "Prep Cook in Mt Pearl",
         adLat: 47.515,
         adLng: -52.79,
-        adDate: "",
         adType: "Cook",
         adDesc: "Prep cook needed to cut vegetables",
         adIcon: CookIcon,
@@ -82,30 +93,15 @@ class Maps extends Component {
         adTitle: "6 hour Dishwashing shift",
         adLat: 47.5072,
         adLng: -52.82007,
-        adDate: "",
         adType: "Dishwasher",
         adDesc:
           "Dishwasher needed for a 6 hour shift this sunday. You will be working with one other dishwasher to wash all kinds of plates and utensils",
         adIcon: DishIcon,
-        adPic: BrickPic,
+        adPic: DupPic,
         adPostal: "H8N 2B5",
         adPlayers: 6,
         adPay: 60,
         adDate: "2022-03-27",
-      },
-      {
-        adTitle: "Cashier Shift",
-        adLat: 47.5222,
-        adLng: -52.822,
-        adDate: "",
-        adType: "Cashier",
-        adDesc: "Experienced cashier needed for 8 hours on sunday",
-        adIcon: CasIcon,
-        adPic: BrickPic,
-        adPostal: "H8N 2B5",
-        adPlayers: 6,
-        adPay: 60,
-        adDate: "2022-04-03",
       },
     ],
     activeMarker: {},
@@ -285,7 +281,7 @@ class Maps extends Component {
 
     return (
       <div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=myboon&libraries=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwysuoZfkC7p6McCpC4nN3SO7s-4pxdDY&libraries=places"></script>
         <div className="mainHuncho">
           <div className="mapBox1">
             {this.state.activeAds.map((ad) => (
@@ -540,5 +536,5 @@ class Maps extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "myboon",
+  apiKey: "AIzaSyAwysuoZfkC7p6McCpC4nN3SO7s-4pxdDY",
 })(Maps);

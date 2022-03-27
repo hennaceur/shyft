@@ -30,7 +30,7 @@ import CasPic from "./images/icons/biggs.png";
 import BrickPic from "./images/icons/biggs.png";
 import TowPic from "./images/icons/biggs.png";
 
-Geocode.setApiKey("myboon");
+Geocode.setApiKey("AIzaSyAwysuoZfkC7p6McCpC4nN3SO7s-4pxdDY");
 Geocode.setLanguage("en");
 
 const styles = {
@@ -242,7 +242,7 @@ class Maps extends Component {
 
     return (
       <div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=myboon&libraries=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwysuoZfkC7p6McCpC4nN3SO7s-4pxdDY&libraries=places"></script>
         <div className="mainHuncho">
           <div className="mapBox1">
             {this.state.activeAds.map((ad) => (
@@ -673,5 +673,5 @@ class Maps extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "myboon",
+  apiKey: "AIzaSyAwysuoZfkC7p6McCpC4nN3SO7s-4pxdDY",
 })(Maps);
