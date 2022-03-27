@@ -9,12 +9,12 @@
 }
 
 .modal>.header {
-    width: 500px;
+    width: stretch;
     border-bottom: 1px solid #8C52FF;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
-    color: #8C52FF;
+    color: white;
     padding: 5px;
     border-radius: 10px;
 }

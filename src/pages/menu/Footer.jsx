@@ -4,7 +4,7 @@ import "./Header.css";
 function Footer() {
   return (
     <div className="header">
-      <h3>Copyright Reserved NearMe Corporation</h3>
+      <h3>Copyright Reserved Shyft Corporation</h3>
     </div>
   );
 }

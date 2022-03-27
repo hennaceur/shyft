@@ -17,7 +17,7 @@
     flex: 1;
     height: 865px;
     overflow: auto;
-    background-color: #FFBE58;
+    background-color: whitesmoke;
 }
 
 .mapBox2 {
@@ -47,6 +47,9 @@
 
 .autocomplete-dropdown-container
 {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
     color: white;
     font-weight: bold;
 }

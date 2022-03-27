@@ -1,20 +1,20 @@
 import React from "react";
-import OpenHouseMap from "./../../OpenHouseMap";
-import Header from "./../menu/Header";
+import UserMap from "../../User";
+import Header from "../menu/Header";
 import "./../../css/SearchInput.css";
 import "./../garage-sale/Map.css";
 
-function OpenHouse() {
+function User() {
   return (
     <div className="mainContainer">
       <div className="headerBox">
         <Header />
       </div>
       <div className="container2">
-        <OpenHouseMap />
+        <UserMap />
       </div>
     </div>
   );
 }
 
-export default OpenHouse;
+export default User;

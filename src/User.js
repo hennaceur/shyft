@@ -51,6 +51,34 @@ class Maps extends Component {
     showBannerNow: false,
     activeAds: [
       {
+        adTitle: "Waiter Needed",
+        adLat: 47.56309,
+        adLng: -52.73061,
+        adDate: "",
+        adType: "Server",
+        adDesc: "asdf",
+        adIcon: ServerIcon,
+        adPic: BrickPic,
+        adPostal: "H8N 2B5",
+        adPlayers: 5,
+        adPay: 70,
+        adDate: "2021-03-29",
+      },
+      {
+        adTitle: "Prep Cook in Mt Pearl",
+        adLat: 47.515,
+        adLng: -52.79,
+        adDate: "",
+        adType: "Cook",
+        adDesc: "Prep cook needed to cut vegetables",
+        adIcon: CookIcon,
+        adPic: BrickPic,
+        adPostal: "H8N 2B5",
+        adPlayers: 4,
+        adPay: 90,
+        adDate: "2022-03-28",
+      },
+      {
         adTitle: "6 hour Dishwashing shift",
         adLat: 47.5072,
         adLng: -52.82007,
@@ -63,7 +91,21 @@ class Maps extends Component {
         adPostal: "H8N 2B5",
         adPlayers: 6,
         adPay: 60,
-        adDate: "2021-04-25",
+        adDate: "2022-03-27",
+      },
+      {
+        adTitle: "Cashier Shift",
+        adLat: 47.5222,
+        adLng: -52.822,
+        adDate: "",
+        adType: "Cashier",
+        adDesc: "Experienced cashier needed for 8 hours on sunday",
+        adIcon: CasIcon,
+        adPic: BrickPic,
+        adPostal: "H8N 2B5",
+        adPlayers: 6,
+        adPay: 60,
+        adDate: "2022-04-03",
       },
     ],
     activeMarker: {},
@@ -391,7 +433,7 @@ class Maps extends Component {
           </div>
           <div className="mapBox2">
             <Banner
-              title="Event Registered Succesfully!"
+              title="Request Sent!"
               css={this.state.banner1Css}
               showBanner={this.state.showBannerNow}
               visibleTime={this.state.showBannerTime}
@@ -488,182 +530,6 @@ class Maps extends Component {
                     </div>
                   )}
                 </PlacesAutocomplete>
-              </div>
-              <div className="innerBox2-1">
-                <Popup
-                  trigger={
-                    <ul className="how">
-                      <button className="addButton">+</button>
-                    </ul>
-                  }
-                  modal
-                  nested
-                >
-                  {(close) => (
-                    <div className="modal">
-                      <button
-                        onClick={() => console.log("clicked")}
-                        className="close"
-                        onClick={close}
-                      >
-                        &times;
-                      </button>
-                      <div className="header"> Post New Ad</div>
-                      <div className="content">
-                        {" "}
-                        <form className="" noValidate autoComplete="off">
-                          <div className="contentBox1">
-                            <div className="formInput">
-                              <TextField
-                                id="outlined-name"
-                                label="Title"
-                                value={this.state.listingTitle}
-                                onChange={this.handleListingTitle}
-                                variant="outlined"
-                              />
-                            </div>
-                            <div className="formInput">
-                              <FormControl
-                                style={{ width: "200px" }}
-                                variant="outlined"
-                                className=""
-                              >
-                                <InputLabel id="demo-simple-select-outlined-label">
-                                  Type
-                                </InputLabel>
-                                <Select
-                                  labelId="demo-simple-select-outlined-label"
-                                  id="demo-simple-select-outlined"
-                                  value={this.state.listingType}
-                                  onChange={this.handleListingType}
-                                  label="Type"
-                                >
-                                  <MenuItem value="">
-                                    <em>None</em>
-                                  </MenuItem>
-                                  <MenuItem value="Server">
-                                    <img
-                                      style={{
-                                        width: "30px",
-                                        height: "30px",
-                                      }}
-                                      src={ServerIcon}
-                                    />
-                                    Server
-                                  </MenuItem>
-                                  <MenuItem value="Dishwasher">
-                                    <img
-                                      style={{
-                                        width: "30px",
-                                        height: "30px",
-                                      }}
-                                      src={DishIcon}
-                                    />
-                                    Dishwasher
-                                  </MenuItem>
-                                  <MenuItem value="Cook">
-                                    <img
-                                      style={{
-                                        width: "30px",
-                                        height: "30px",
-                                      }}
-                                      src={CookIcon}
-                                    />
-                                    Cook
-                                  </MenuItem>
-                                  <MenuItem value="Cashier">
-                                    <img
-                                      style={{
-                                        width: "30px",
-                                        height: "30px",
-                                      }}
-                                      src={CasIcon}
-                                    />{" "}
-                                    Cashier
-                                  </MenuItem>
-                                  <MenuItem value="Other">
-                                    <AddIcon></AddIcon> Other
-                                  </MenuItem>
-                                </Select>
-                              </FormControl>
-                            </div>
-                          </div>
-                          <div className="formInput">
-                            <TextField
-                              style={{ width: "450px" }}
-                              id="outlined-name"
-                              label="Description"
-                              value={this.state.listingDescription}
-                              onChange={this.handleListingDesc}
-                              variant="outlined"
-                            />
-                          </div>
-                          <div className="formInput">
-                            <TextField
-                              style={{ width: "200px" }}
-                              id="outlined-name"
-                              label="Shyft Hours"
-                              value={this.state.listingPlayers}
-                              onChange={this.handleListingPlayers}
-                              variant="outlined"
-                            />
-                          </div>
-                          <div className="formInput">
-                            <TextField
-                              style={{ width: "200px" }}
-                              id="outlined-name"
-                              label="Pay $"
-                              value={this.state.listingPay}
-                              onChange={this.handleListingPay}
-                              variant="outlined"
-                            />
-                          </div>
-                          <div className="formInput">
-                            <TextField
-                              id="outlined-name"
-                              label="Postal Code"
-                              value={this.state.listingPostalCode}
-                              onChange={this.handleListingPostalCode}
-                              variant="outlined"
-                            />
-                          </div>
-
-                          <div className="formInput">
-                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                              <Grid container justify="space-around">
-                                <form className="" noValidate>
-                                  <TextField
-                                    id="date"
-                                    label="Event Date"
-                                    type="date"
-                                    defaultValue="2017-05-24"
-                                    className=""
-                                    InputLabelProps={{
-                                      shrink: true,
-                                    }}
-                                    value={this.state.listingDate}
-                                    onChange={this.handleListingDate}
-                                  />
-                                </form>
-                              </Grid>
-                            </MuiPickersUtilsProvider>
-                          </div>
-                        </form>
-                        <div className="contentBox2"></div>
-                      </div>
-                      <div className="actions">
-                        <Button
-                          onClick={this.onNewAd}
-                          style={{
-                            ...styles.button,
-                          }}
-                        >
-                          {"Post"}
-                        </Button>
-                      </div>
-                    </div>
-                  )}
-                </Popup>
               </div>
             </div>
           </div>

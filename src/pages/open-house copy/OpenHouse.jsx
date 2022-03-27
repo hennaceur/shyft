@@ -1,6 +1,6 @@
 import React from "react";
-import OpenHouseMap from "./../../OpenHouseMap";
-import Header from "./../menu/Header";
+import OpenHouseMap from "../../OpenHouseMap";
+import Header from "../menu/Header";
 import "./../../css/SearchInput.css";
 import "./../garage-sale/Map.css";
 
