@@ -1,4 +1,4 @@
-# NearMe
+# Shyft
 
  Shyft is a web application that allows businesses to create ads for temporary work shifts. 
  
