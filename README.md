@@ -1,7 +1,7 @@
 # NearMe
 
-NearMe is a web application that allows users to post pin point adverts on an interactive map user interface in three different categories: pick-up sport games, real estate/open-houses, and garage sales. 
-
+ Shyft is a web application that allows businesses to create ads for temporary work shifts. 
+ 
 ## Available Scripts
 
 In the project directory, you can run:
